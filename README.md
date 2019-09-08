@@ -1,10 +1,14 @@
 # terraform-aws-networking-exercises
 
-The following is a small example of how to create a small, but basic network within AWS>
+![Architecture Diagram](./architecture.png)
 
-## What resources does it create?
+The following is a small example of how to create a small, but basic network within AWS.
 
-1. A VPC
+It is used to explain some of the main networking concepts by using as little infrastructure as possible.
+
+## The resources
+
+1. A VPC (with internet gateway)
 2. 3 Subnets (1 public, 2 private)
 3. A basic EC2 machine
 4. A security group with all egress traffic, and HTTP ingress
