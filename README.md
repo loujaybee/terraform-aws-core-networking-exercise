@@ -5,7 +5,9 @@ The following is a small example of how to create a small, but basic network wit
 ## What resources does it create?
 
 1. A VPC
-2. 3 Subnets
+2. 3 Subnets (1 public, 2 private)
+3. A basic EC2 machine
+4. A security group with all egress traffic, and HTTP ingress
 
 ## Getting Started
 
