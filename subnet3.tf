@@ -2,7 +2,7 @@
 resource "aws_subnet" "subnet_3_private" {
   availability_zone = "ap-south-1a"
   vpc_id            = "${aws_vpc.main.id}"
-  cidr_block        = "10.0.0.48/28"
+  cidr_block        = "${var.subnet_3_private}"
 
   tags {
     description = "Private subnet 2"

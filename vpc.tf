@@ -1,6 +1,7 @@
 # 10.0.0.1 —> 10.0.0.62
 resource "aws_vpc" "main" {
-  cidr_block = "10.0.0.0/26"
+  cidr_block           = "10.0.0.0/26"
+  enable_dns_hostnames = true
 
   tags {
     description = "Custom VPC"

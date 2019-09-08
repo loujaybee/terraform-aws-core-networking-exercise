@@ -12,6 +12,7 @@ resource "aws_instance" "public_instance" {
               yum install httpd -y
               service httpd start
               chkconfig httpd on
+              echo "Hello World" >> /var/www/html/index.html
               EOF
 
   tags {

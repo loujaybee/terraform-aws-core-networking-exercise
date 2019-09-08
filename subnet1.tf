@@ -2,7 +2,7 @@
 resource "aws_subnet" "subnet_1_public" {
   availability_zone       = "ap-south-1a"
   vpc_id                  = "${aws_vpc.main.id}"
-  cidr_block              = "10.0.0.0/27"
+  cidr_block              = "${var.subnet_1_public}"
   map_public_ip_on_launch = true
 
   tags {
